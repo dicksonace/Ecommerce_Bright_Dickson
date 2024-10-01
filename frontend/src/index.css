@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter",sans-serif ;
+        background-color: #ffff;
+      }
+}
+
+
+@layer components {
+  .btnTrue {
+    @apply bg-red-400;
+  }
+  .btnFalse{
+    @apply bg-green-500;
+  }
+}
+
+@layer utilities {
+  .instructions {
+    @apply text-red-500  text-sm text-center -mt-6 bg-transparent;
+  }
+  .error {
+    @apply hidden;
+
+  }
+  .errorStyle {
+    @apply text-red-500  text-sm text-center m-2 bg-transparent;
+  }
+  
+}
