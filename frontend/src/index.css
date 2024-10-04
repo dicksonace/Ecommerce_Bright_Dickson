@@ -12,20 +12,17 @@
         background-color: #ffff;
       }
 }
-
-
 @layer components {
-  .btnTrue {
-    @apply bg-red-400;
-  }
-  .btnFalse{
-    @apply bg-green-500;
+  .spinner {
+    @apply inline-block w-7 h-7 border-2 bg-white
+     border-black border-dashed rounded-full animate-spin;
+     @apply  animate-custom-spin;
   }
 }
 
 @layer utilities {
   .instructions {
-    @apply text-red-500  text-sm text-center -mt-6 bg-transparent;
+    @apply text-red-500  text-sm text-center  bg-transparent;
   }
   .error {
     @apply hidden;
